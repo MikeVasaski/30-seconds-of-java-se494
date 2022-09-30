@@ -24,12 +24,15 @@
 
 package cls;
 
+import lombok.experimental.UtilityClass;
+
 import java.lang.reflect.InvocationTargetException;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class CreatingObjectSnippet {
   /**
    * Create object using reflection.

@@ -24,12 +24,15 @@
 
 package file;
 
+import lombok.experimental.UtilityClass;
+
 import java.io.File;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class ListDirectoriesSnippet {
   /**
    * List directories.

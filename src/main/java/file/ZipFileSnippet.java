@@ -24,6 +24,8 @@
 
 package file;
 
+import lombok.experimental.UtilityClass;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -35,6 +37,7 @@ import java.util.zip.ZipOutputStream;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class ZipFileSnippet {
   /**
    * Zip single file.

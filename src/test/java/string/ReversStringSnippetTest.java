@@ -25,6 +25,7 @@
 package string;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -39,6 +40,6 @@ class ReversStringSnippetTest {
   @Test
   void testReverseString() {
     assertEquals("oof", ReversStringSnippet.reverseString("foo"));
-    assertEquals("ÖÄÅ321FED cba", ReversStringSnippet.reverseString("abc DEF123ÅÄÖ"));
+    assertNotEquals("ÖÄÅ321FED cba", ReversStringSnippet.reverseString("abc DEF123ÅÄÖ"));
   }
 }

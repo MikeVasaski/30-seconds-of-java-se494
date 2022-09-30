@@ -24,6 +24,8 @@
 
 package cls;
 
+import lombok.experimental.UtilityClass;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,6 +36,7 @@ import java.util.stream.Collectors;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class GetAllFieldNamesSnippet {
   /**
    * Print all declared field names of the class or the interface the class extends.

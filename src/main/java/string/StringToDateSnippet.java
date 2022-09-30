@@ -24,6 +24,8 @@
 
 package string;
 
+import lombok.experimental.UtilityClass;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -32,6 +34,7 @@ import java.util.Date;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class StringToDateSnippet {
   /**
    * Convert string to date.

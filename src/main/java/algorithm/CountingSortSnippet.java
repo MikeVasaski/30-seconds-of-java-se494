@@ -24,12 +24,15 @@
 
 package algorithm;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Arrays;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class CountingSortSnippet {
 
   /**

@@ -24,12 +24,15 @@
 
 package string;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Arrays;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class AnagramSnippet {
   /**
    * Checks if two words are anagrams (contains same characters with same frequency in any order).

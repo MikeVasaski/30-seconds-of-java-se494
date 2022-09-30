@@ -36,7 +36,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Tests for AddDaysToDateSnippet.
  */
-public class AddDaysToDateSnippetTest {
+class AddDaysToDateSnippetTest {
 
   /**
   * Test add days to date.
@@ -54,8 +54,13 @@ public class AddDaysToDateSnippetTest {
     String dateStrAfter = "January 3, 2022";
     Date dateAfterTwoDaysExpected = format.parse(dateStrAfter);
 
+    String fourDateStrAfter = "January 7, 2022";
+    Date dateAfterFourDaysExpected = format.parse(fourDateStrAfter);
+
     Date dateAfterTwoDaysActual = AddDaysToDateSnippet.addDaysToDate(date, 2);
     Assertions.assertEquals(dateAfterTwoDaysExpected, dateAfterTwoDaysActual);
+    Date dateAfterFourDaysActual = AddDaysToDateSnippet.addDaysToDate(dateAfterTwoDaysExpected, 4);
+    Assertions.assertEquals(dateAfterFourDaysExpected, dateAfterFourDaysActual);
   }
 
   /**
@@ -65,8 +70,11 @@ public class AddDaysToDateSnippetTest {
   void testAddDaysToLocalDate() {
     LocalDate date = LocalDate.now();
     LocalDate dateAfterTwoDaysExpected = date.plusDays(2);
+    LocalDate SixDaysLaterExpected = dateAfterTwoDaysExpected.plusDays(6);
 
     LocalDate dateAfterTwoDaysActual = AddDaysToDateSnippet.addDaysToLocalDate(date, 2);
     Assertions.assertEquals(dateAfterTwoDaysExpected, dateAfterTwoDaysActual);
+    LocalDate dateAfterSixDaysActual = AddDaysToDateSnippet.addDaysToLocalDate(dateAfterTwoDaysExpected, 6);
+    Assertions.assertEquals(SixDaysLaterExpected, dateAfterSixDaysActual);
   }
 }

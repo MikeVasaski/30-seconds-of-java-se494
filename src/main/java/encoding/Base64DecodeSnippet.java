@@ -24,12 +24,15 @@
 
 package encoding;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Base64;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class Base64DecodeSnippet {
   /**
    * Decodes a Base64 encoded string to the actual representation.

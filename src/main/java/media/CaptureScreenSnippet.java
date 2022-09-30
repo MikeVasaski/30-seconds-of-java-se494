@@ -24,6 +24,8 @@
 
 package media;
 
+import lombok.experimental.UtilityClass;
+
 import java.awt.AWTException;
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -36,6 +38,7 @@ import javax.imageio.ImageIO;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class CaptureScreenSnippet {
   /**
    * Capture screenshot and save it to PNG file. Credits: https://viralpatel.net/blogs/how-to-take-screen-shots-in-java-taking-screenshots-java/

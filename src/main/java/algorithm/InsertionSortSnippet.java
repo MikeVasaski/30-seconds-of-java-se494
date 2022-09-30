@@ -24,10 +24,13 @@
 
 package algorithm;
 
+import lombok.experimental.UtilityClass;
+
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class InsertionSortSnippet {
 
   /**

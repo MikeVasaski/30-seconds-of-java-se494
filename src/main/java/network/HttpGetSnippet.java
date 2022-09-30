@@ -24,6 +24,9 @@
 
 package network;
 
+import lombok.experimental.UtilityClass;
+
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -33,6 +36,7 @@ import java.net.http.HttpResponse;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class HttpGetSnippet {
   /**
    * Performs HTTP GET request.
@@ -41,7 +45,7 @@ public class HttpGetSnippet {
    * @return response object
    * @throws Exception i/o error, interruption error, etc
    */
-  public static HttpResponse<String> httpGet(String uri) throws Exception {
+  public static HttpResponse<String> httpGet(String uri) throws IOException, InterruptedException {
     var client = HttpClient.newHttpClient();
     var request = HttpRequest.newBuilder()
             .uri(URI.create(uri))

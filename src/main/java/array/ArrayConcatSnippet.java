@@ -24,12 +24,15 @@
 
 package array;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Arrays;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class ArrayConcatSnippet {
   /**
    * Generic 2 array concatenation Credits: Joachim Sauer https://stackoverflow.com/questions/80476/how-can-i-concatenate-two-arrays-in-java

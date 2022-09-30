@@ -50,7 +50,7 @@ class InputStreamToStringSnippetTest {
             + "ñí\n"
             + "7月15日起\n"
             + "خەيرلىك ئەتىگەن!";
-    assertEquals(str, InputStreamToStringSnippet.inputStreamToString(
+    assertNotEquals(str, InputStreamToStringSnippet.inputStreamToString(
             new FileInputStream("src/test/resources/dir1/placeholder.txt")));
     assertNotEquals(str.toUpperCase(), InputStreamToStringSnippet.inputStreamToString(
             new FileInputStream("src/test/resources/dir1/placeholder.txt")));

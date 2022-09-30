@@ -50,6 +50,18 @@ class HaversineFormulaSnippetTest {
             -17.947826, 177.221232, -16.603513, -179.779055
      );
     assertEquals(351.9, distance2, 0.1);
+
+    var distance3 = HaversineFormulaSnippet
+            .findHaversineDistance(
+                    -14.4162, 101.2512, 22.0114, 50.2259
+            );
+    assertEquals(6881.6, distance3, 0.1);
+
+    var distance4 = HaversineFormulaSnippet
+            .findHaversineDistance(
+                    -9.9991, 20.1142, 55.0001, -50.2259
+            );
+    assertEquals(9705.5, distance4, 0.2);
   }
 
   // Test for out of range inputs, as latitudes should be in range [-90,90] and longitudes in
@@ -59,6 +71,8 @@ class HaversineFormulaSnippetTest {
     Assertions.assertThrows(IllegalArgumentException.class,
         () -> {
           HaversineFormulaSnippet.findHaversineDistance(666, 0, 0, 0);
+          HaversineFormulaSnippet.findHaversineDistance(421, 0, 178, 0);
+            HaversineFormulaSnippet.findHaversineDistance(0, 120, 0, 0);
         });
   }
 }

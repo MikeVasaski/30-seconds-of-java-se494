@@ -24,12 +24,15 @@
 
 package array;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Arrays;
 
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class FindMaxSnippet {
   /**
    * Returns the maximum integer from the array using reduction.

@@ -24,6 +24,8 @@
 
 package file;
 
+import lombok.experimental.UtilityClass;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -33,6 +35,7 @@ import java.util.List;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class ReadLinesSnippet {
   /**
    * Read file as list of strings.

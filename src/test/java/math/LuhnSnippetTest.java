@@ -24,10 +24,10 @@
 
 package math;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class LuhnSnippetTest {
 
@@ -85,6 +85,7 @@ class LuhnSnippetTest {
   @ParameterizedTest
   void testLuhnCalculateChecksum(long num, int expectedChecksum) {
     assertEquals(expectedChecksum, LuhnSnippet.calculateLuhnChecksum(num));
+    assertFalse(num<0);
   }
 
 }

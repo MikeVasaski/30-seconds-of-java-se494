@@ -24,6 +24,8 @@
 
 package cls;
 
+import lombok.experimental.UtilityClass;
+
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
@@ -33,6 +35,7 @@ import java.util.stream.Collectors;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class GetAllMethodsSnippet {
   /**
    * Print all declared methods of the class.

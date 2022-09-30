@@ -24,6 +24,8 @@
 
 package math;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -31,6 +33,7 @@ import java.util.Collections;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class PerformLotterySnippet {
   /**
    * Generate random lottery numbers.

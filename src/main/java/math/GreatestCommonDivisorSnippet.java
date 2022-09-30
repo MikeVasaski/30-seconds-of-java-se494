@@ -24,10 +24,13 @@
 
 package math;
 
+import lombok.experimental.UtilityClass;
+
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class GreatestCommonDivisorSnippet {
   /**
    * Greatest common divisor calculation.

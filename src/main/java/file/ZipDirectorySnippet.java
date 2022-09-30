@@ -24,6 +24,8 @@
 
 package file;
 
+import lombok.experimental.UtilityClass;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -35,6 +37,7 @@ import java.util.zip.ZipOutputStream;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class ZipDirectorySnippet {
   /**
    * Zip a complete directory.
@@ -69,13 +72,13 @@ public class ZipDirectorySnippet {
     if (fileToZip.isDirectory()) {
       if (fileName.endsWith("/")) {
         zipOut.putNextEntry(new ZipEntry(fileName)); // To be zipped next
-        zipOut.closeEntry();
       } else {
         // Add the "/" mark explicitly to preserve structure while unzipping action is performed
         zipOut.putNextEntry(new ZipEntry(fileName + "/"));
-        zipOut.closeEntry();
       }
+      zipOut.closeEntry();
       var children = fileToZip.listFiles();
+      assert children != null;
       for (var childFile : children) { // Recursively apply function to all children
         zipFile(childFile, fileName + "/" + childFile.getName(), zipOut);
       }

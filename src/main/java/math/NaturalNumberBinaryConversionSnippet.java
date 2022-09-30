@@ -24,6 +24,8 @@
 
 package math;
 
+import lombok.experimental.UtilityClass;
+
 import java.util.Stack;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -33,6 +35,7 @@ import java.util.stream.Stream;
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class NaturalNumberBinaryConversionSnippet {
 
   /**

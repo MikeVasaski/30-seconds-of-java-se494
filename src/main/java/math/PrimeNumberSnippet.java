@@ -24,10 +24,13 @@
 
 package math;
 
+import lombok.experimental.UtilityClass;
+
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class PrimeNumberSnippet {
   /**
    * Checks if given number is a prime number. Prime number is a number that is greater than 1 and

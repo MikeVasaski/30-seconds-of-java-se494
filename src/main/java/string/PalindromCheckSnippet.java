@@ -24,10 +24,13 @@
 
 package string;
 
+import lombok.experimental.UtilityClass;
+
 /*
  * 30 Seconds of Java code library
  *
  */
+@UtilityClass
 public class PalindromCheckSnippet {
   /**
    * Checks if given string is palindrome (same forward and backward). Skips non-letter characters
